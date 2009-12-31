@@ -73,7 +73,7 @@ input.input-text:focus {
 <script type="text/javascript">
 var booking = false;
 var twitter = chrome.extension.getBackgroundPage().Twitter;
-if( !twitter.authenticated() || !twitter.tokenRequested() ){
+if( !twitter.authenticated() && !twitter.tokenRequested() ){
 	twitter.startAuthentication();
 	window.close();
 }
