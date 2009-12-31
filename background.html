@@ -1,0 +1,7 @@
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/oauth.js"></script>
+<script type="text/javascript" src="js/sha1.js"></script>
+<script type="text/javascript" src="js/twitter_lib.js"></script>
+<script type="text/javascript">
+var Twitter = new TwitterLib(6000, function onAuthenticated(){}, function onHitsUpdated(remainingHits, nextHitsReset, hourlyLimit){}, 'http://twitter.com/', 'https://twitter.com/oauth/authorize?oauth_token=', 'http://twitter.com/');
+</script>
